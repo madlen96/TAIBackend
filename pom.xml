@@ -48,14 +48,14 @@
 			<artifactId>themoviedbapi</artifactId>
 			<version>3.3</version>
 		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.4-1200-jdbc41</version>
+		</dependency>
 		<!--<dependency>-->
-			<!--<groupId>org.postgresql</groupId>-->
-			<!--<artifactId>postgresql</artifactId>-->
-			<!--<version>9.4.1212.jre7</version>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>mysql</groupId>-->
-			<!--<artifactId>mysql-connector-java</artifactId>-->
+			<!--<groupId>postgresql</groupId>-->
+			<!--<artifactId>postgresql-connector-java</artifactId>-->
 			<!--<scope>runtime</scope>-->
 		<!--</dependency>-->
 		<dependency>
