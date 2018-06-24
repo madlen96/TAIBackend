@@ -18,17 +18,11 @@ public class MovieController {
     }
 
     @GetMapping("/good-movies")
-    @CrossOrigin(origins = {"https://tv-shows-progresser.herokuapp.com"})
+    @CrossOrigin(origins = {"https://tv-shows-progresser.herokuapp.com","http://localhost:3000"})
     public Collection<Movie> goodMovies() {
         return repository.findAll().stream()
-                    .filter(this::isGreat)
                 .collect(Collectors.toList());
     }
 
-        private boolean isGreat(Movie movie) {
-            return !movie.getTitle().equals("HaryCzary") &&
-                    !movie.getTitle().equals("Lala") &&
-                    !movie.getTitle().equals("PBS");
-        }
 }
 
