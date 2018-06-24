@@ -29,7 +29,7 @@ public class TvshowsprogresserApplication {
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		CorsConfiguration config = new CorsConfiguration();
 		config.setAllowCredentials(true);
-		config.setAllowedOrigins(Arrays.asList("https://tv-shows-progresser.herokuapp.com"));
+		config.setAllowedOrigins(Arrays.asList("http://tv-shows-progresser.herokuapp.com"));
 		config.setAllowedMethods(Collections.singletonList("*"));
 		config.setAllowedHeaders(Collections.singletonList("*"));
 		source.registerCorsConfiguration("/**", config);
