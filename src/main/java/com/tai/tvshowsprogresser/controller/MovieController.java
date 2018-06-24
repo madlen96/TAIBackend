@@ -18,7 +18,7 @@ public class MovieController {
     }
 
     @GetMapping("/good-movies")
-    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5000"})
+    @CrossOrigin(origins = {"https://tv-shows-progresser.herokuapp.com"})
     public Collection<Movie> goodMovies() {
         return repository.findAll().stream()
                     .filter(this::isGreat)
